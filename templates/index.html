@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Classroom Technology Training Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <main class="container">
+        <h1>AI Classroom Technology Training Simulator</h1>
+
+        <p class="subtitle">
+            Helping new classroom technology consultants practice real-world support scenarios.
+        </p>
+
+        <section class="scenario-card">
+            <h2>Training Scenario</h2>
+            <p>
+                An instructor reports that the projector is powered on, but their laptop screen is not displaying on the classroom screen.
+            </p>
+        </section>
+
+        <form method="POST">
+            <label for="trainee_response">
+                What would you check first?
+            </label>
+
+            <textarea
+                id="trainee_response"
+                name="trainee_response"
+                placeholder="Example: I would first check whether the HDMI cable is securely connected..."
+            ></textarea>
+
+            <button type="submit">
+                Get Coaching Feedback
+            </button>
+        </form>
+
+        {% if feedback %}
+        <section class="feedback-card">
+            <h2>AI Coach Feedback</h2>
+            <pre>{{ feedback }}</pre>
+        </section>
+        {% endif %}
+    </main>
+</body>
+</html>

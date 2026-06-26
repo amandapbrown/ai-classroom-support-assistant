@@ -1,19 +1,22 @@
-# AI Classroom Support Assistant
+# AI Classroom Technology Training Simulator
 
-An AI-powered web application that helps instructors and classroom support staff troubleshoot common classroom technology issues.
+An AI-powered web application that helps train new classroom technology consultants through realistic troubleshooting scenarios.
 
 ## Features
 
-- AI-generated troubleshooting guides
-- Support for projector, microphone, Zoom, document camera, and instructor PC issues
-- Step-by-step diagnostic workflow
-- Recommendations for when to escalate to technical support
+- Interactive classroom technology support scenarios
+- Trainee response input
+- AI-generated coaching feedback
+- Realistic troubleshooting workflows
+- Flask-based web interface
 
-## Built With
+## Tech Stack
 
 - Python
 - Flask
-- HTML/CSS
+- HTML
+- CSS
+- JavaScript
 - OpenAI API
 
 ## Project Status
