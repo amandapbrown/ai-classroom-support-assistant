@@ -15,9 +15,12 @@
         </p>
 
         <section class="scenario-card">
-            <h2>Training Scenario</h2>
+            <p class="badge">{{ scenario.difficulty }} • {{ scenario.category }}</p>
+
+            <h2>{{ scenario.title }}</h2>
+
             <p>
-                An instructor reports that the projector is powered on, but their laptop screen is not displaying on the classroom screen.
+                {{ scenario.description }}
             </p>
         </section>
 
@@ -33,13 +36,13 @@
             ></textarea>
 
             <button type="submit">
-                Get Coaching Feedback
+                Submit Response
             </button>
         </form>
 
         {% if feedback %}
         <section class="feedback-card">
-            <h2>AI Coach Feedback</h2>
+            <h2>Coach Feedback</h2>
             <pre>{{ feedback }}</pre>
         </section>
         {% endif %}
